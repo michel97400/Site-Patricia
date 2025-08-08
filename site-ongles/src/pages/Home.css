@@ -1,0 +1,132 @@
+/* GENERAL */
+.home {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--pink-dark);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--pink), var(--pink-dark));
+  color: white;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background: white;
+  color: var(--pink-dark);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+.btn-primary:hover {
+  background: var(--bg-light);
+  transform: translateY(-2px);
+}
+
+/* SERVICES */
+.services {
+  padding: 3rem 1.5rem;
+  background: white;
+  text-align: center;
+  
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.service-list {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.service-card {
+  background: var(--bg-light);
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 8px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+}
+.icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+.gallery-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 12px rgba(0,0,0,0.1);
+}
+
+.caption {
+  display: block;
+  margin: 0.5rem 0 1rem;
+  font-weight: 600;
+  color: #c21873; /* rose foncé */
+  font-size: 1.1rem;
+}
+
+/* Boutons navigation */
+.btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 0.5rem 1rem;
+  color: #c21873;
+  background: rgba(255, 105, 168, 0.2);
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  user-select: none;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background: rgba(255, 105, 168, 0.4);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

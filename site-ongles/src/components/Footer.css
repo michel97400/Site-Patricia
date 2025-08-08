@@ -1,0 +1,15 @@
+:root {
+  --pink: #ff69a8;
+  --pink-dark: #c21873;
+  --bg-light: #fcd7e8;
+}
+
+.footer {
+    background-color: var(--bg-light);
+    padding: 1rem;
+}
+
+.info-footer {
+    text-align: center;
+    color: var(--pink-dark);
+}
